@@ -5,28 +5,14 @@
 	"version": "0.2.0",
 	"configurations": [
 		{
-			"name": "mk string",
-			"type": "cppdbg",
-			"request": "launch",
-			"program": "${workspaceFolder}/a.out",
-			"args": [
-				"test",
-				"92233720368547758"
-			],
-			"stopAtEntry": false,
-			"cwd": "${workspaceFolder}",
-			"environment": [],
-			"externalConsole": false,
-			"MIMode": "lldb"
-		},
-		{
 			"name": "(lldb) Launch",
 			"type": "cppdbg",
 			"request": "launch",
 			"program": "${workspaceFolder}/a.out",
 			"args": [
-				"--atoi",
-				"--standart-test"
+				"some",
+				"cool",
+				"string"
 			],
 			"stopAtEntry": false,
 			"cwd": "${workspaceFolder}",

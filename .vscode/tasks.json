@@ -12,7 +12,9 @@
 				"-Wall",
 				"-Wextra",
 				"-Werror",
-				"${file}"
+				"${workspaceFolder}/${relativeFile}",
+				"-o",
+				"${workspaceFolder}/${relativeFileDirname}/a.out"
 			],
 			"options": {
 				"cwd": "/usr/bin"
@@ -24,14 +26,13 @@
 		},
 		{
 			"type": "shell",
-			"label": "gcc Makefile",
-			"command": "make",
+			"label": "gcc build active folder",
+			"command": "${workspaceFolder}/.vscode/compile.sh",
 			"args": [
-				"g",
-				"FOLDER=${workspaceFolder}/${relativeFileDirname}"
+				"${workspaceFolder}/${relativeFileDirname}"
 			],
 			"options": {
-				// "cwd": "/usr/bin"
+				"cwd": "/usr/bin"
 			},
 			"problemMatcher": [
 				"$gcc"

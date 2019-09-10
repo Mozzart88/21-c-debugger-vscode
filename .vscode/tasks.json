@@ -38,6 +38,21 @@
 				"$gcc"
 			],
 			"group": "build"
+		},
+		{
+			"type": "shell",
+			"label": "gcc build project",
+			"command": "${workspaceFolder}/.vscode/compile.sh",
+			"args": [
+				"${workspaceFolder}"
+			],
+			"options": {
+				"cwd": "/usr/bin"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build"
 		}
 	]
 }

@@ -14,7 +14,7 @@
 				"-Werror",
 				"${workspaceFolder}/${relativeFile}",
 				"-o",
-				"${workspaceFolder}/${relativeFileDirname}/a.out"
+				"${workspaceFolder}/a.out"
 			],
 			"options": {
 				"cwd": "/usr/bin"

@@ -53,6 +53,19 @@
 				"$gcc"
 			],
 			"group": "build"
+		},
+		{
+			"type": "shell",
+			"label": "norminette activ file",
+			"command": "/usr/local/bin/norminette",
+			"args": [
+				"${workspaceFolder}/${relativeFile}"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"group": "build",
+			"problemMatcher": []
 		}
 	]
 }

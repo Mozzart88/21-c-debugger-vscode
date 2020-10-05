@@ -41,18 +41,32 @@
 		},
 		{
 			"type": "shell",
-			"label": "gcc build project",
-			"command": "${workspaceFolder}/.vscode/compile.sh",
-			"args": [
-				"${workspaceFolder}"
-			],
+			"label": "fsrcs",
+			"command": "${workspaceFolder}/.mozz/fsrcs.sh",
+			"args": [],
 			"options": {
-				"cwd": "/usr/bin"
+				"cwd": "${workspaceFolder}"
 			},
 			"problemMatcher": [
 				"$gcc"
 			],
-			"group": "build"
+			"group": "none"
+		},
+		{
+			"type": "shell",
+			"label": "gcc build project",
+			"command": "/usr/bin/make",
+			"args": [
+
+			],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"dependsOn": ["fsrcs"]
 		},
 		{
 			"type": "shell",
